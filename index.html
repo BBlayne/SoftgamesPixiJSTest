@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blayne's PixiJS Project</title>
+    <style>
+        /* eliminating janky looking border with full screen stage */
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        #fps-counter {
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 14px;
+        min-width: 50px;
+        text-align: center;
+        }
+        #buttons {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 10;
+        }
+        button {
+        margin: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        }
+
+        #canvas-container {
+            position: relative;
+            width: 800px;
+            height: 600px;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0; /* PixiJS canvas */
+        }
+
+        #dialogue {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 10; /* Higher than canvas */
+            pointer-events: none; 
+        }
+
+        .paragraph {
+            color: white;
+            font-family: sans-serif;
+            font-size: 18px;
+            margin-bottom: 1em;
+        }
+
+        .inline-icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas-container">
+        <div id="dialogue"></div>
+    </div>
+    <div id="buttons">
+        <div id="fps-counter">FPS</div>
+        <button onclick="task1()">Task 1</button>
+        <button onclick="task2()">Task 2</button>
+        <button onclick="task3()">Task 3</button>
+      </div>
+      <div id="dialogue"></div>
+      <script type="module" src="/src/main.js"></script>
+</body>
+</html>

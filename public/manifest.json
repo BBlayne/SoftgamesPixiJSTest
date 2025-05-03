@@ -1,0 +1,26 @@
+{
+    "bundles": [
+        {
+            "name": "my_characters",
+            "assets": [
+                {
+                    "alias": "hoodie_boy",
+                    "src": "/images/HoodieBoy.png"                    
+                },
+                {
+                    "alias": "eerie_girl",
+                    "src": "/images/Eerie.png"                    
+                }
+            ]
+        },
+        {
+            "name": "furries",
+            "assets": [
+                {
+                    "alias": "beaver",
+                    "src": "/images/beaverocsprite.png"                    
+                }
+            ]
+        }       
+    ]
+}
